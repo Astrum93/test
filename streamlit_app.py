@@ -4,7 +4,7 @@ import numpy as np
 
 # 헤드라인
 st.write("# 보험료 계산기 ")
-st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYL203CqnnOR5ppBj09N1pYxB3Y6afCDgOBA&usqp=CAU")
+st.image("https://littledeep.com/wp-content/uploads/2021/05/people-illustration-v2-png-1024x853.png")
 
 # 첫번째 행
 r1_col1, r1_col2, r1_col3 = st.columns(3)
@@ -44,4 +44,5 @@ if predict_button:
         is_male * 1, is_northwest * 1, is_southeast * 1, is_southwest * 1]]))
     
 
-    st.metric("예측 보험료", int(pred[0]))
+    st.write("예측 보험료") 
+    st.write("int(pred[0]))")
