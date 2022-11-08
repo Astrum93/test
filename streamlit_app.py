@@ -41,6 +41,6 @@ if predict_button:
     model = joblib.load('first_model.pkl')
 
     pred = model.predict(np.array([[age, bmi, children, smoker * 1,
-        is_male * 1, is_northwest * 1, is_southeast * 1, is_southwest * 1]]))
+        is_male * 1, is_northwest * 1, is_southeast * 1, is_southwest * 1]])).int()
 
-    st.metric("예측 보험료", map(int(pred[0]))+'원')
+    st.metric("예측 보험료", pred[0]+'원')
