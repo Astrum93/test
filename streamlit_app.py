@@ -42,6 +42,6 @@ if predict_button:
 
     pred = model.predict(np.array([[age, bmi, children, smoker * 1,
         is_male * 1, is_northwest * 1, is_southeast * 1, is_southwest * 1]]))
-    int(pred)
+    
 
-    st.metric("예측 보험료", pred[0])
+    st.metric(["예측 보험료", [int(pred[0]), "원"]])
