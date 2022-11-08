@@ -4,7 +4,8 @@ import numpy as np
 
 # 헤드라인
 st.write("# 테스트 보험료 예측")
-st.url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYL203CqnnOR5ppBj09N1pYxB3Y6afCDgOBA&usqp=CAU")
+st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYL203CqnnOR5ppBj09N1pYxB3Y6afCDgOBA&usqp=CAU")
+
 # 첫번째 행
 r1_col1, r1_col2, r1_col3 = st.columns(3)
 
