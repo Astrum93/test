@@ -44,4 +44,4 @@ if predict_button:
         is_male * 1, is_northwest * 1, is_southeast * 1, is_southwest * 1]]))
     int(pred)
 
-    st.metric("예측 보험료", pred[0]+'원')
+    st.metric("예측 보험료", pred[0])
